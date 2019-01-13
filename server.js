@@ -16,6 +16,14 @@ app.get('/',(request,response)=>{
 });
 
 
+
+app.get('/projects',(req,res)=>{
+    res.render('projects.hbs',{
+        title:'projects page',
+        message:'welcome to All projects page',
+    });
+});
+
 app.get('/about',(req,res)=>{
     res.render('about.hbs',{
         title:'About page',
